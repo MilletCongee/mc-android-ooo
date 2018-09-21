@@ -89,7 +89,7 @@ public interface McOooApiService {
         private static McOooApiService mcOooApiService;
 
         public static McOooApiService Create(String type,final Context mContext) {
-            String BASE_URL = "https://www.oschina.net/";
+            String BASE_URL = "http://www.oschina.net/";
             HttpLoggingInterceptor logging = new HttpLoggingInterceptor(new HttpLogger());
             logging.setLevel(HttpLoggingInterceptor.Level.BASIC);
             OkHttpClient.Builder httpBuilder = new OkHttpClient.Builder();

@@ -59,6 +59,7 @@ public class LoginActivity extends AppCompatActivity{
                 code = url.substring(index+5,ldex);
                 Toast.makeText(LoginActivity.this,code,Toast.LENGTH_LONG).show();
                 SpUtil.putString(LoginActivity.this,"code",code);
+                Log.e("LoginActivityVCode",code);
                 finish();
                 return true;
             }
